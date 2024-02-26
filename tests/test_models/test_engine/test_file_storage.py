@@ -7,7 +7,6 @@ from datetime import datetime
 import inspect
 import json
 import os
-import pep8
 import unittest
 from models.engine.file_storage import FileStorage
 from models.amenity import Amenity
@@ -55,7 +54,6 @@ class TestFileStorageDocs(unittest.TestCase):
 
 class TestFileStorage(unittest.TestCase):
     """Test the FileStorage class"""
-    @unittest.skipIf(os.getenv('HBNB_TYPE_STORAGE') == 'db', "not testing file storage")
     def setUp(self):
         """Set up the tests"""
         self.storage = FileStorage()
@@ -221,7 +219,7 @@ class TestFileStorage(unittest.TestCase):
         key = 'User.' + self.new_user.id
         self.storage.close()
         self.storage = FileStorage()
-        new_user_2 = User(email="new_test@example.com", password="new_testpass")
+        new_user_2 = User(email="new_test@exampl.com", password="new_tstpass")
         self.storage.new(new_user_2)
         self.assertIn(key, self.storage.all())
         self.assertEqual(self.storage.all()[key], new_user_2)
