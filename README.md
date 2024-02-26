@@ -1,76 +1,40 @@
-# 0x05. AirBnB Clone - RESTful API
+# Understanding APIs and REST
 
-## Overview
-This project is part of the curriculum at Holberton School and is to be completed by a team of two people: Jamesmax Munene and Mwanthi Waita. The project, initiated by Guillaume, the CTO at Holberton School, aims to develop a RESTful API for an AirBnB clone using Python and Flask.
+## What REST Means
 
-### Project Schedule:
-- **Start Date:** February 22, 2024, 6:00 AM
-- **End Date:** February 27, 2024, 6:00 AM
-- **Checker Release:** February 23, 2024, 12:00 PM
+REST stands for Representational State Transfer. It is an architectural style for designing networked applications. RESTful systems typically use standard HTTP methods (GET, POST, PUT, DELETE) to perform operations on resources, and they communicate over the Internet using standard protocols.
 
-## Learning Objectives
-Upon completion of this project, team members are expected to demonstrate understanding in the following concepts:
-- REST API
-- AirBnB clone
-- Flask and its features
-- HTTP methods for retrieving, creating, updating, and deleting resources
-- CORS (Cross-Origin Resource Sharing)
-- Designing modular applications with Flask Blueprints
-- Writing Flask tests
-- Understanding of PEP 8 style guide
+## What API Means
 
-### Concepts to Explore
-Before diving into the project, it is recommended to review the following concepts:
-- [REST API concept page](#)
-- [Learn REST: A RESTful Tutorial](#)
-- [Designing a RESTful API with Python and Flask](#)
-- [HTTP access control (CORS)](#)
-- [Flask cheatsheet](#)
-- [What are Flask Blueprints, exactly?](#)
-- [Modular Applications with Blueprints](#)
-- [Flask tests](#)
-- [Flask-CORS](#)
+API stands for Application Programming Interface. It is a set of rules and protocols that allows different software applications to communicate with each other. APIs define the methods and data formats that applications can use to request and exchange information.
 
-## Learning Objectives
-Upon completion of the project, team members should be able to explain, without assistance, the following:
+## What CORS Means
 
-### General:
-- What REST means
-- What API means
-- What CORS means
-- What is an API
-- What is a REST API
-- Types of APIs
-- HTTP methods for retrieving, creating, updating, and deleting resources
-- How to request a REST API
+CORS stands for Cross-Origin Resource Sharing. It is a security feature implemented by web browsers that controls access to resources from different origins (domains). CORS allows servers to specify which origins are allowed to access their resources, helping to prevent cross-origin attacks.
 
-### Copyright - Plagiarism:
-- Strict prohibition of plagiarism
-- Solutions to tasks are to be developed independently
+## Types of APIs
 
-## Requirements
-### Python Scripts:
-- Allowed Editors: vi, vim, emacs
-- Interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.4.3)
-- All files end with a new line
-- The first line of all files: `#!/usr/bin/python3`
-- Mandatory README.md file at the root of the project folder
-- Code adheres to PEP 8 style (version 1.7)
-- All files must be executable
-- Length of files will be tested using wc
-- All modules, classes, and functions have documentation
+There are several types of APIs, including:
+- **Web APIs**: APIs exposed over the web using HTTP protocols.
+- **Library APIs**: APIs provided by libraries or frameworks to interact with their functionality.
+- **Operating System APIs**: APIs provided by operating systems for interacting with system resources.
+- **Hardware APIs**: APIs provided by hardware devices for controlling and accessing hardware features.
 
-### Python Unit Tests:
-- Allowed Editors: vi, vim, emacs
-- All test files end with a new line
-- Test files should be inside a folder named tests
-- Use the unittest module
-- Test files are python files (extension: .py)
-- Test files and folders should start with test_
-- Test file organization mirrors the project structure
-- Execute tests using: `python3 -m unittest discover tests` or `python3 -m unittest tests/test_models/test_base_model.py`
+## What Is an API?
 
-## Contributors
-- Guillaume, CTO at Holberton School
-- Jamesmax Munene
-- Mwanthi Waita
+An API is a set of rules and protocols that allows different software applications to communicate with each other. APIs define the methods and data formats that applications can use to request and exchange information.
+
+## What Is a REST API?
+
+A REST API is a type of web API that follows the principles of RESTful architecture. REST APIs use standard HTTP methods (GET, POST, PUT, DELETE) to perform operations on resources, and they communicate over the Internet using standard protocols.
+
+## HTTP Methods for CRUD Operations
+
+- **GET**: Retrieve data from the server.
+- **POST**: Create new data on the server.
+- **PUT**: Update existing data on the server.
+- **DELETE**: Delete data from the server.
+
+## How to Request a REST API
+
+To request a REST API, you typically use an HTTP client library or tool (such as cURL) to send HTTP requests to the API endpoint. You specify the HTTP method (GET, POST, PUT, DELETE) and provide any necessary parameters or data in the request body or URL. The API server processes the request and returns a response, usually in JSON or XML format.
